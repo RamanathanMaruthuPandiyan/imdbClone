@@ -41,7 +41,7 @@ router.get("/action/items/:id", async (req, res) => {
         let result = await persons.getActionItems(ObjectId(id));
         res.send(result);
     } catch (e) {
-        appLogger.error("Error while creating the movie.", e);
+        appLogger.error("Error while creating the given person id.", e);
         res.status(500).send({ name: e.name, message: e.message });
     }
 });
@@ -66,7 +66,7 @@ router.get("/:id", async (req, res) => {
         let result = await persons.getPerson(ObjectId(id));
         res.send(result);
     } catch (e) {
-        appLogger.error("Error while retrieving the movie.", e);
+        appLogger.error("Error while retrieving the person.", e);
         res.status(500).send({ name: e.name, message: e.message });
     }
 });

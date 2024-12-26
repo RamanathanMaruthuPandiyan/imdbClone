@@ -38,6 +38,5 @@ Sample Record-2: {
     },
     "completionPercentage": NumberInt(0),
     "reason": "The movie is already imported."
-
 }
  */

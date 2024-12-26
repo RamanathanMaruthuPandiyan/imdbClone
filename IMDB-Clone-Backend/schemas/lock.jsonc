@@ -1,0 +1,27 @@
+{
+    "_id": "",
+    "resourceId": "", //IMDB ID movie
+    "lockHolder": "", //Job Id
+    "lockedAt": "", //ISO Date
+    "userId": "" //User ID
+}
+/*
+Sample Record -1 :
+{
+    "_id": ObjectId("676d378d7e0a13a565c1b4b9"),
+    "resourceId": "tt3417422",
+    "lockHolder": ObjectId("676d378d7e0a13a565c1b4b8"),
+    "lockedAt": ISODate("2024-12-26T11:01:33.487+0000"),
+    "userId": "ADMIN"
+}
+
+Sample Record - 2:
+
+{
+    "_id": ObjectId("676d37917e0a13a565c1b4be"),
+    "resourceId": "tt12361178",
+    "lockHolder": ObjectId("676d37917e0a13a565c1b4bd"),
+    "lockedAt": ISODate("2024-12-26T11:01:37.903+0000"),
+    "userId": "ADMIN"
+}
+*/

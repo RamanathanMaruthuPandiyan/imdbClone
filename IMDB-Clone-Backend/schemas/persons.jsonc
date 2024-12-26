@@ -9,3 +9,30 @@
         "isProducer": false //Boolean
     }
 }
+/*
+Sample Record - 1:
+{
+    "_id": ObjectId("6763cfa5658a6173b0babd0e"),
+    "name": "Rajesh",
+    "gender": "M",
+    "dob": ISODate("1995-05-15T00:00:00.000+0000"),
+    "bio": "A versatile actor known for his dramatic roles.",
+    "roles": {
+        "isActor": true,
+        "isProducer": true
+    }
+}
+
+Sample Record - 2:
+{
+    "_id": ObjectId("6763cfc0658a6173b0babd0f"),
+    "name": "Anita",
+    "gender": "F",
+    "dob": ISODate("1988-03-22T00:00:00.000+0000"),
+    "bio": "A talented producer and screenwriter.",
+    "roles": {
+        "isActor": false,
+        "isProducer": true
+    }
+}
+*/

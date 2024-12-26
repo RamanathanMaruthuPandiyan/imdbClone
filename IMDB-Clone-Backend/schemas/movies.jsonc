@@ -1,6 +1,7 @@
 {
     "_id": "", //ObjectId
     "name": "", //String
+    "imdbId": "", //IMDB ID if it is been imported form IMDB
     "yearOfRelease": 1, //Number
     "plot": "", //String
     "poster": "", //String-URL
@@ -17,12 +18,79 @@
     ],
     "actors": [
         {
+            "personId": "", //For the person imported from IMDB
             "id": "", //ObjectedId
             "name": "" //String
         },
         {
+            "personId": "", //For the person imported from IMDB
             "id": "", //ObjectedId
             "name": "" //String
         }
     ]
 }
+/*
+Sample Record -1:
+{
+    "_id": ObjectId("676d37927e0a13a565c1b4c2"),
+    "imdbId": "tt3417422",
+    "name": "Drishyam",
+    "yearOfRelease": NumberInt(2013),
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2MwMjNlNjctYjA2ZS00ZDA4LWJmNTYtODg5NDY1YzQzZDg2XkEyXkFqcGc@._V1_.jpg",
+    "actors": [
+        {
+            "personId": "nm0482320",
+            "name": "Mohanlal",
+            "id": ObjectId("676d378d7e0a13a565c1b4ba"),
+            "dob": ISODate("1960-05-21T00:00:00.000+0000")
+        },
+        {
+            "personId": "nm0576169",
+            "name": "Meena",
+            "id": ObjectId("676d378d7e0a13a565c1b4bb"),
+            "dob": ISODate("1976-09-16T00:00:00.000+0000")
+        },
+        {
+            "personId": "nm5242011",
+            "name": "Asha Sharath",
+            "id": ObjectId("676d378d7e0a13a565c1b4bc"),
+            "dob": ISODate("1975-07-19T00:00:00.000+0000")
+        }
+    ],
+    "producers": [],
+    "ratings": 8.3,
+    "plot": "Georgekutty (Mohanlal) is a cable-TV network owner in a remote hilly village in Kerala. He lives a happy life with his wife and two daughters. The first half revolves around the depiction of their happy family. Anju (Ansiba), Georgekutty's daughter, goes on a school trip between the proceedings. After a few days, a guy who had been at the school trip with her meets Anju. He blackmails her with a video of her that he had captured during the school trip. In the course of events he is accidentally killed by Rani (Meena) and Anju. Georgekutty on returning home is appraised of the events and thus begins a cat and mouse game as the murdered person is the son of IG Geeta Prabhakar (Asha Sharath) and Prabhakar (Siddique). How the family weathers the storm that ensues during the murder investigation forms the rest of the story leading to a deeply satisfying and unexpected climax."
+}
+    
+Sample Record -2:
+{
+    "_id": ObjectId("676d37967e0a13a565c1b4c3"),
+    "imdbId": "tt12361178",
+    "name": "Drishyam 2",
+    "yearOfRelease": NumberInt(2021),
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2Q2YTczM2QtNDBkNC00M2I5LTkyMzgtOTMwNzQ0N2UyYWQ0XkEyXkFqcGc@._V1_.jpg",
+    "actors": [
+        {
+            "personId": "nm0482320",
+            "name": "Mohanlal",
+            "id": ObjectId("676d378d7e0a13a565c1b4ba"),
+            "dob": ISODate("1960-05-21T00:00:00.000+0000")
+        },
+        {
+            "personId": "nm0576169",
+            "name": "Meena",
+            "id": ObjectId("676d378d7e0a13a565c1b4bb"),
+            "dob": ISODate("1976-09-16T00:00:00.000+0000")
+        },
+        {
+            "personId": "nm5954277",
+            "name": "Ansiba",
+            "id": ObjectId("676d37917e0a13a565c1b4c1"),
+            "dob": ISODate("1992-06-18T00:00:00.000+0000")
+        }
+    ],
+    "producers": [],
+    "ratings": 8.4,
+    "plot": "Six years after the terrible event that almost destroyed his family, Georgekutty is the proud owner of a movie theater and aspiring to write and produce his own hit film. Yet his wife Rani is ill at ease. She worries about Georgekutty, who's taken out a loan and started drinking. She worries about her daughters; Anju suffers epileptic fits and cowers in fear at the sound of a passing police siren, and young Anu's growing independence takes her away from her mother's watchful eyes. Even more worrying, the neighbors have started to gossip and the police have remained relentless in unearthing George's darkest secret. When someone from the past returns to the village, can Georgekutty save his family a second time?"
+}
+*/
