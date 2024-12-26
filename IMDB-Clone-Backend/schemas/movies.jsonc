@@ -1,0 +1,28 @@
+{
+    "_id": "", //ObjectId
+    "name": "", //String
+    "yearOfRelease": 1, //Number
+    "plot": "", //String
+    "poster": "", //String-URL
+    "ratings": 1, //Number
+    "producers": [
+        {
+            "id": "", //ObjectId
+            "name": "" //String
+        },
+        {
+            "id": "", //ObjectId
+            "name": "" //String
+        }
+    ],
+    "actors": [
+        {
+            "id": "", //ObjectedId
+            "name": "" //String
+        },
+        {
+            "id": "", //ObjectedId
+            "name": "" //String
+        }
+    ]
+}

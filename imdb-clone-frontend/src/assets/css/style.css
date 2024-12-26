@@ -1,0 +1,310 @@
+/* style.css */
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* style.css */
+.card {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.card>* {
+    margin-bottom: 15px;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgb(77, 77, 77) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar .navbar-toggler-icon {
+    background-color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: #ddd !important;
+}
+
+.loader-container {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/* Dropdown container styling */
+.action-dropdown .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.action-dropdown .btn {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.action-dropdown .btn:hover {
+    color: #007bff;
+}
+
+/* Dropdown menu styling */
+.action-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1050;
+    display: none;
+    min-width: 150px;
+    padding: 8px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action-dropdown .dropdown.show .dropdown-menu {
+    display: block;
+}
+
+.action-dropdown .dropdown-menu li a {
+    display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.action-dropdown .dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+}
+
+.action-dropdown .dropdown-menu li a.text-primary {
+    color: #007bff;
+}
+
+.action-dropdown .dropdown-menu li a.text-primary:hover {
+    color: #0056b3;
+}
+
+.action-dropdown .dropdown-menu li {
+    margin-bottom: 4px;
+}
+
+.action-dropdown .dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.bi.bi-pen {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.bi.bi-trash {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.icon-text {
+    font-size: 14px;
+    color: #000;
+}
+
+/* Table Sort */
+.sorting::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.sorting.ascending::after {
+    background: url('../images/sorting/sorting-ascending.svg') no-repeat;
+    fill: var(--primary);
+}
+
+.sorting.descending::after {
+    background: url('../images/sorting/sorting-descending.svg') no-repeat;
+}
+
+/* For Table */
+
+thead th {
+    white-space: nowrap;
+}
+
+.inline-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-field {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Filter CSS */
+
+.filter-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    /* Above the main content */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter-panel {
+    background: #fff;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.filter-header h5 {
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.filter-body {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.filter-body h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    /* Blue underline */
+    padding-bottom: 5px;
+}
+
+.filter-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Custom Filter Button */
+
+.custom-filter-btn {
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    color: #007bff !important;
+}
+
+.custom-filter-btn:hover,
+.custom-filter-btn:focus,
+.custom-filter-btn:active {
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    color: #007bff !important;
+    box-shadow: none !important;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.custom-checkbox input {
+    margin-right: 8px;
+}

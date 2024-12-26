@@ -1,0 +1,11 @@
+{
+    "_id": "", //ObjectId
+    "name": "", //String
+    "gender": "", //String
+    "dob": "", //ISO Date
+    "bio": "", //String
+    "roles": {
+        "isActor": false, //Boolean
+        "isProducer": false //Boolean
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "_id": "", //ObjectId
+    "name": "", //Name of the JOB
+    "imdbId": "", //ID From IMDB
+    "status": "", //Such as NotStarted,Started, Completed or Errored
+    "dates": {
+        "created": "", //ISO Object
+        "started": "", //ISO Object
+        "ended": "" //ISO Object
+    },
+    "completionPercentage": 1, //Completion percentage
+    "reason": "", //Error message if the process exited due to Error,
+    "message": "" //Success message if the porocess got completed
+}
+/*
+Sample Record-1:{
+    "_id": ObjectId("676959f2d1e9d249f5a5056c"),
+    "name": "IIMBD",
+    "imdbId": "tt0120338",
+    "status": "CO",
+    "dates": {
+        "created": ISODate("2024-12-23T12:39:14.136+0000"),
+        "started": ISODate("2024-12-23T12:39:14.143+0000"),
+        "ended": ISODate("2024-12-23T12:39:20.624+0000")
+    },
+    "completionPercentage": NumberInt(100),
+    "message": "The import process completed successfully."
+}
+
+Sample Record-2: {
+    "_id": ObjectId("6769922ffb6e528211d8ad2f"),
+    "name": "IIMBD",
+    "imdbId": "tt27118357",
+    "status": "ER",
+    "dates": {
+        "created": ISODate("2024-12-23T16:39:11.690+0000"),
+        "ended": ISODate("2024-12-23T16:39:11.702+0000")
+    },
+    "completionPercentage": NumberInt(0),
+    "reason": "The movie is already imported."
+
+}
+ */

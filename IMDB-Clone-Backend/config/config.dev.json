@@ -1,0 +1,63 @@
+{
+     "timeZoneConfig": {
+        "hoursOffset": 5,
+        "minsOffset": 30,
+        "timezone": "+05:30"
+    },
+    "remoteUrls": {
+        "Rapid": {
+            "accessKey": "8c5014746dmshdaa649cf3eb05eep1d56ebjsn6719e1d913aa",
+            "host":"imdb-com.p.rapidapi.com",
+            "searchMovie":"https://imdb-com.p.rapidapi.com/search",
+            "getRatings":"https://imdb-com.p.rapidapi.com/title/get-ratings",
+            "getPlot":"https://imdb-com.p.rapidapi.com/title/get-plots",
+            "getOverview":"https://imdb-com.p.rapidapi.com/actor/get-overview"
+        }
+    },
+    "dbConfig": {
+        "url": "mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.12",
+        "db": "imdb-clone",
+        "replica": "rs0"
+    },
+    "rootFolderName": "IMDB-Clone-Backend",
+    "paths": {
+        "downloadDir": "Reports",
+        "uploadDir": "Uploads"
+    },
+    "aws": {
+        "bucketName": "imddclone",
+        "bucketUrl": "https://imddclone.s3.us-east-1.amazonaws.com/",
+        "accessKeyId": "AKIAVRUVQQ7UNILPVYFI",
+        "accessKeySecret": "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",
+        "region": "us-east-1",
+        "maxTimeToUploadInSecs": 600
+    },
+    "logConfig": {
+        "httpRequestLog": {
+            "fname": "httpRequest.log",
+            "rfsOptions": {
+                "size": "10M",
+                "interval": "1d",
+                "compress": "gzip"
+            },
+            "format": ":remote-addr - :remote-user :date[clf] ':method :url HTTP/:http-version' :status :res[content-length] :response-time ':referrer' ':user-agent'"
+        },
+        "appLog": {
+            "streamConfig": {
+                "type": "rotating-file",
+                "fname": "app.log",
+                "period": "1d",
+                "count": 7,
+                "level": "debug"
+            }
+        }
+    },
+    "corsWhiteList": {
+        "IMDB-Clone-Frontend": {
+            "urls": [
+                "http://localhost:3000",
+                "http://localhost:5500"
+            ]
+        }
+    }
+}
