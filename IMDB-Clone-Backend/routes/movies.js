@@ -3,10 +3,11 @@ import appLogger from "../logging/appLogger.js";
 import movies from "../services/movies.js";
 import imdb from "../services/remote/imdb.js";
 import { ObjectId } from "../daos/MongoDbConnection.js";
+import { authorize, ROLES } from "../middleware/auth.js";
 
 const router = Router();
 
-router.post("/imdb/import", async (req, res) => {
+router.post("/imdb/import", authorize([ROLES.A]), async (req, res) => {
     try {
         let imdbId = req.body.imdbId;
         let name = req.body.name;
@@ -25,7 +26,7 @@ router.post("/imdb/import", async (req, res) => {
     }
 });
 
-router.post("/pagination", async (req, res) => {
+router.post("/pagination", authorize([ROLES.A]), async (req, res) => {
     try {
         let filter = req.body.filter || {};
         let skip = req.body.skip || 0;
@@ -41,7 +42,7 @@ router.post("/pagination", async (req, res) => {
     }
 });
 
-router.post("/", async (req, res) => {
+router.post("/", authorize([ROLES.A]), async (req, res) => {
     try {
         let dataObj = movies.validatePayload(req.body);
         let result = await movies.addMovie(dataObj);
@@ -52,7 +53,7 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.get("/action/items/:id", async (req, res) => {
+router.get("/action/items/:id", authorize([ROLES.A]), async (req, res) => {
     try {
         let id = req.params.id;
         if (!id) {
@@ -66,7 +67,7 @@ router.get("/action/items/:id", async (req, res) => {
     }
 });
 
-router.get("/filter/options", async (req, res) => {
+router.get("/filter/options", authorize([ROLES.A]), async (req, res) => {
     try {
         let result = await movies.getFilterOptions();
         res.send(result);
@@ -76,7 +77,7 @@ router.get("/filter/options", async (req, res) => {
     }
 });
 
-router.get("/dropdown/persons", async (req, res) => {
+router.get("/dropdown/persons", authorize([ROLES.A]), async (req, res) => {
     try {
         let result = await movies.getDropdown();
         res.send(result);
@@ -86,7 +87,7 @@ router.get("/dropdown/persons", async (req, res) => {
     }
 });
 
-router.get("/imdb/search", async (req, res) => {
+router.get("/imdb/search", authorize([ROLES.A]), async (req, res) => {
     try {
         let searchTerm = req.query.searchTerm;
         let type = req.query.type || "MOVIE";
@@ -101,7 +102,7 @@ router.get("/imdb/search", async (req, res) => {
     }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", authorize([ROLES.A]), async (req, res) => {
     try {
         let id = req.params.id;
         if (!id) {
@@ -116,7 +117,7 @@ router.get("/:id", async (req, res) => {
     }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", authorize([ROLES.A]), async (req, res) => {
     try {
         let id = req.params.id;
         if (!id) {
@@ -131,7 +132,7 @@ router.put("/:id", async (req, res) => {
     }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", authorize([ROLES.A]), async (req, res) => {
     try {
         let id = req.params.id;
         if (!id) {

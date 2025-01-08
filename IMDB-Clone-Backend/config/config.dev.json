@@ -32,6 +32,22 @@
         "region": "us-east-1",
         "maxTimeToUploadInSecs": 600
     },
+    "authServerConfig": {
+        "clientId": "imdbClone",
+        "validateToken": true,
+        "skipIds": {
+            "generalPurpose": "oVupZoHtZmzVmUr1rneRFOfcuM3FJXQjj"
+        },
+        "tokenValidationPath": "/realms/imdb/protocol/openid-connect/userinfo",
+        "baseUrl": "http://localhost:8081",
+        "settings": {
+            "username": "admin",
+            "password": "SaiGanesh@11",
+            "grantType": "password",
+            "clientId": "admin-cli"
+        },
+        "realmName": "imdb"
+    },
     "logConfig": {
         "httpRequestLog": {
             "fname": "httpRequest.log",

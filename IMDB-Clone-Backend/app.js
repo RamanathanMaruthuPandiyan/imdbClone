@@ -17,6 +17,7 @@ import movies from './routes/movies.js';
 import enums from './routes/enums.js';
 import s3 from './routes/s3.js';
 import jobs from './routes/jobs.js';
+import auth from "./routes/auth.js";
 
 const corsOptions = {
     origin: config.corsWhiteList["IMDB-Clone-Frontend"].urls
@@ -34,6 +35,7 @@ app.use("/movies", movies);
 app.use("/enums", enums);
 app.use("/s3", s3);
 app.use("/jobs", jobs);
+app.use("/auth", auth);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
