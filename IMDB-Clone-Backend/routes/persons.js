@@ -57,7 +57,7 @@ router.get("/filter/options", authorize([ROLES.A]), async (req, res) => {
     }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", authorize([ROLES.A]), async (req, res) => {
     try {
         let id = req.params.id;
         if (!id) {

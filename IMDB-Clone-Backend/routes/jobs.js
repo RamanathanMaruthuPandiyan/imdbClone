@@ -3,7 +3,6 @@ import jobs from "../services/jobs.js";
 import { authorize, ROLES } from "../middleware/auth.js";
 const router = Router();
 
-
 router.post("/pagination", authorize([ROLES.A]), async function (req, res) {
     try {
         let filter = req.body.filter || {};
