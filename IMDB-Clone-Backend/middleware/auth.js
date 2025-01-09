@@ -2,7 +2,6 @@ import { createRequire } from 'module';
 const loadModule = createRequire(import.meta.url);
 const settings = loadModule(`../config/config.${process.env.NODE_ENV}.json`);
 import axios from 'axios';
-import parseArgs from 'minimist';
 import logger from '../logging/appLogger.js';
 
 const skipAuthIds = new Set(Object.values(settings.authServerConfig.skipIds));

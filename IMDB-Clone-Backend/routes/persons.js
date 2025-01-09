@@ -2,9 +2,10 @@ import { Router } from "express";
 import appLogger from "../logging/appLogger.js";
 import persons from "../services/persons.js";
 import { ObjectId } from "../daos/MongoDbConnection.js";
+import { authorize, ROLES } from "../middleware/auth.js";
 const router = Router();
 
-router.post("/pagination", async function (req, res) {
+router.post("/pagination", authorize([ROLES.A]), async function (req, res) {
     try {
         let filter = req.body.filter || {};
         let skip = req.body.skip || 0;
@@ -21,7 +22,7 @@ router.post("/pagination", async function (req, res) {
 });
 
 
-router.post("/", async function (req, res) {
+router.post("/", authorize([ROLES.A]), async function (req, res) {
     try {
         let dataObj = persons.validatePayload(req.body);
         let result = await persons.addPerson(dataObj);
@@ -32,7 +33,7 @@ router.post("/", async function (req, res) {
     }
 });
 
-router.get("/action/items/:id", async (req, res) => {
+router.get("/action/items/:id", authorize([ROLES.A]), async (req, res) => {
     try {
         let id = req.params.id;
         if (!id) {
@@ -46,7 +47,7 @@ router.get("/action/items/:id", async (req, res) => {
     }
 });
 
-router.get("/filter/options", async (req, res) => {
+router.get("/filter/options", authorize([ROLES.A]), async (req, res) => {
     try {
         let result = await persons.getFilterOptions();
         res.send(result);
@@ -71,7 +72,7 @@ router.get("/:id", async (req, res) => {
     }
 });
 
-router.put("/:id", async function (req, res) {
+router.put("/:id", authorize([ROLES.A]), async function (req, res) {
     try {
         let id = req.params.id;
         if (!id) {
@@ -86,7 +87,7 @@ router.put("/:id", async function (req, res) {
     }
 });
 
-router.delete("/:id", async function (req, res) {
+router.delete("/:id", authorize([ROLES.A]), async function (req, res) {
     try {
         let id = req.params.id;
         if (!id) {

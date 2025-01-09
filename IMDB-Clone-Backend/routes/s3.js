@@ -2,12 +2,13 @@ import { Router } from 'express';
 import multer from 'multer';
 import s3Services from '../services/s3.js';
 import appLogger from '../logging/appLogger.js';
+import { authorize, ROLES } from "../middleware/auth.js";
 
 const router = Router();
 const upload = multer(); // Use multer for parsing form-data
 
 // Upload file directly to S3
-router.post('/upload', upload.single('file'), async function (req, res) {
+router.post('/upload', upload.single('file'), authorize([ROLES.A]), async function (req, res) {
     try {
         const file = req.file; // Multer provides the uploaded file
         const type = req.body.type || "image"; // Additional metadata if required

@@ -1,9 +1,10 @@
 import { Router } from "express";
 import jobs from "../services/jobs.js";
+import { authorize, ROLES } from "../middleware/auth.js";
 const router = Router();
 
 
-router.post("/pagination", async function (req, res) {
+router.post("/pagination", authorize([ROLES.A]), async function (req, res) {
     try {
         let filter = req.body.filter || {};
         let skip = req.body.skip || 0;

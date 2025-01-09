@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { Jobs, Sex, Action_Items } from "../enums/enums.js";
+import { authorize, ROLES } from "../middleware/auth.js";
 const router = Router();
 
 const map = {
@@ -7,7 +8,7 @@ const map = {
     "jobs": Jobs,
     "actionItems": Action_Items
 }
-router.get("/:enumName", async (req, res) => {
+router.get("/:enumName", authorize([ROLES.A]), async (req, res) => {
     try {
         let enumName = req.params.enumName;
         res.send(map[enumName]);
