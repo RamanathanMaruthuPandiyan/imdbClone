@@ -1,4 +1,4 @@
-# IMDb Clone - Question 3
+# IMDb Clone
 
 This is a IMDB Clone Project. It is designed to replicate core functionalities of the IMDb platform, allowing users to explore and interact with movie-related data.
 
