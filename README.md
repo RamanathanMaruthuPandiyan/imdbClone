@@ -67,37 +67,37 @@ Here are some screenshots of the application:
 ![Home Page](./Screenshots/List Movies.png)
 
 #### Add a Movie
-![Add a Movie](./Screenshots/Add Movie.png)
+![Add a Movie](./Screenshots/Add%20Movie.png)
 
 #### Movies Options Bar
-![Options Bar](./Screenshots/Options Bar.png)
+![Options Bar](./Screenshots/Options%20Bar.png)
 
 #### Edit a Movie
-![Edit a Movie](./Screenshots/Edit Movie.png)
+![Edit a Movie](./Screenshots/Edit%20Movie.png)
 
 #### List all Persons
-![List all Persons](./Screenshots/Persons Listing.png)
+![List all Persons](./Screenshots/Persons%20Listing.png)
 
 #### Add Persons
-![Add Persons](./Screenshots/Add persons.png)
+![Add Persons](./Screenshots/Add%20persons.png)
 
 #### Persons Options Bar
-![Persons Options Bar](./Screenshots/Persons Options Bar.png)
+![Persons Options Bar](./Screenshots/Persons%20Options%20Bar.png)
 
 #### Edit Persons
-![Edit Persons](./Screenshots/Edit persons.png)
+![Edit Persons](./Screenshots/Edit%20persons.png)
 
 #### Import From IMDB Server
-![Import From IMDB Server](./Screenshots/Import From IMDB Server.png)
+![Import From IMDB Server](./Screenshots/Import%20From%20IMDB%20Server.png)
 
 #### Import Process Initiated
-![Import Process Initiated](./Screenshots/Import Process Initiated.png)
+![Import Process Initiated](./Screenshots/Import%20Process%20Initiated.png)
 
 #### Imported Movie Listing
-![Imported Movie Listing](./Screenshots/Imported Movie Listing.png)
+![Imported Movie Listing](./Screenshots/Imported%20Movie%20Listing.png)
 
 #### Edit Imported Movie 
-![Edit Imported Movie](./Screenshots/Edit Imported Movie.png)
+![Edit Imported Movie](./Screenshots/Edit%20Imported%20Movie.png)
 
 
 ## License
