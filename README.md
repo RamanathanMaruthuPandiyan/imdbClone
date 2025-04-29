@@ -85,7 +85,7 @@ Here are some screenshots of the application:
 ![Persons Options Bar](./Screenshots/Persons%20Options%20Bar.png)
 
 #### Edit Persons
-![Edit Persons](./Screenshots/Edit%20persons.png)
+![Edit Persons](./Screenshots/Edit%20Persons.png)
 
 #### Import From IMDB Server
 ![Import From IMDB Server](./Screenshots/Import%20From%20IMDB%20Server.png)
