@@ -64,40 +64,40 @@ imdbCloneQ3/
 Here are some screenshots of the application:
 
 #### Home Page
-![Home Page](./screenshots/List Movies.png)
+![Home Page]("./screenshots/List Movies.png")
 
 #### Add a Movie
-![Add a Movie](./screenshots/Add Movie.png)
+![Add a Movie]("./screenshots/Add Movie.png")
 
 #### Movies Options Bar
-![Options Bar](./screenshots/Options Bar.png)
+![Options Bar]("./screenshots/Options Bar.png")
 
 #### Edit a Movie
-![Edit a Movie](./screenshots/Edit Movie.png)
+![Edit a Movie]("./screenshots/Edit Movie.png")
 
 #### List all Persons
-![List all Persons](./screenshots/Persons Listing.png)
+![List all Persons]("./screenshots/Persons Listing.png")
 
 #### Add Persons
-![Add Persons](./screenshots/Add persons.png)
+![Add Persons]("./screenshots/Add persons.png")
 
 #### Persons Options Bar
-![Persons Options Bar](./screenshots/Persons Options Bar.png)
+![Persons Options Bar]("./screenshots/Persons Options Bar.png")
 
 #### Edit Persons
-![Edit Persons](./screenshots/Edit persons.png)
+![Edit Persons]("./screenshots/Edit persons.png")
 
 #### Import From IMDB Server
-![Import From IMDB Server](./screenshots/Import From IMDB Server.png)
+![Import From IMDB Server]("./screenshots/Import From IMDB Server.png")
 
 #### Import Process Inisiated
-![Import Process Inisiated](./screenshots/Import Process Inisiated.png)
+![Import Process Inisiated]("./screenshots/Import Process Inisiated.png")
 
 #### Imported Movie Listing
-![Imported Movie Listing](./screenshots/Imported Movie Listing.png)
+![Imported Movie Listing]("./screenshots/Imported Movie Listing.png")
 
 #### Edit Imported Movie 
-![Edit Imported Movie](./screenshots/Edit Imported Movie.png)
+![Edit Imported Movie]("./screenshots/Edit Imported Movie.png")
 
 
 ## License
