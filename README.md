@@ -18,7 +18,7 @@ This is a IMDB Clone Project. It is designed to replicate core functionalities o
     ```
 2. Navigate to the project directory:
     ```bash
-    cd imdbCloneQ3
+    cd imdbClone
     ```
 3. Install dependencies:
     ```bash
