@@ -64,7 +64,7 @@ imdbCloneQ3/
 Here are some screenshots of the application:
 
 #### Home Page
-![Home Page](./Screenshots/List Movies.png)
+![Home Page](./Screenshots/List%20Movies.png)
 
 #### Add a Movie
 ![Add a Movie](./Screenshots/Add%20Movie.png)
